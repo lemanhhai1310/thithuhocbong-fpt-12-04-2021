@@ -1,5 +1,29 @@
 /**
  * --------------------------------------------------------------------
+ * Raleway
+ * --------------------------------------------------------------------
+ */
+@font-face{
+  font-family:'Raleway Light';
+  font-display: auto;
+  src:local('Raleway Light'), url('fonts/Fonts/Raleway-Light-vi.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+/**
+ * --------------------------------------------------------------------
+ * Montserrat
+ * --------------------------------------------------------------------
+ */
+@font-face{
+  font-family:'Montserrat ExtraBold';
+  font-display: auto;
+  src:local('Montserrat ExtraBold'), url('fonts/Fonts/Montserrat-ExtraBold.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+/**
+ * --------------------------------------------------------------------
  * Arial
  * --------------------------------------------------------------------
  */
@@ -31,6 +55,18 @@
 }
 /**
  * --------------------------------------------------------------------
+ * SVN-Aleo
+ * --------------------------------------------------------------------
+ */
+@font-face{
+  font-family:'SVN-Aleo Bold Italic';
+  font-display: auto;
+  src:local('SVN-Aleo Bold Italic'), url('fonts/Fonts/SVN-Aleo-Bold-Italic.otf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+/**
+ * --------------------------------------------------------------------
  * Roboto
  * --------------------------------------------------------------------
  */
@@ -52,6 +88,13 @@
   font-family:'Roboto Bold Italic';
   font-display: auto;
   src:local('Roboto Bold Italic'), url('fonts/Fonts/Roboto-BoldItalic.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'Roboto Italic';
+  font-display: auto;
+  src:local('Roboto Italic'), url('fonts/Fonts/Roboto-Italic.ttf') format('truetype');
   font-weight:normal;
   font-style:normal;
 }

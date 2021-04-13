@@ -1,0 +1,152 @@
+.home{
+  &__logo{
+    //top: -37px;
+    //top: -25px;
+    @include fluidx(-37px,-25px,top);
+    img{
+      @include fluidx(75px,50px,height);
+    }
+  }
+  &__block01{
+    padding: 30px 40px;
+    &__title{
+      color: $color1;
+      font-family: $font-Roboto-Bold;
+      @extend .fz-18;
+      line-height: (21.6/18);
+    }
+    &__form{
+      .uk-grid-margin{
+        @include media-breakpoint-up('m'){
+          margin-top: 15px !important;
+        }
+      }
+      &__label{
+        @extend .fz-16;
+        color: #4d4d4d;
+      }
+      &__input{
+        @extend .fz-16;
+        border-left: 3px solid $color1;
+        color: #a4a4a4;
+        font-family: $font-Roboto-Italic;
+        height: 36px;
+        &::placeholder{
+          color: #a4a4a4;
+        }
+      }
+      &__btnSelect{
+        @extend .home__block01__form__input;
+        padding-left: 10px;
+        padding-right: 0;
+        text-transform: inherit;
+        background-color: #fff;
+        .uk-icon{
+          margin-right: 8px;
+        }
+      }
+      &__txt{
+        @extend .fz-16;
+        font-family: $font-Roboto-Italic;
+        color: #a4a4a4;
+      }
+      &__btn{
+        @extend .fz-20;
+        background: #5969cf;
+        font-family: $font-Roboto-Bold;
+        @include media-breakpoint-down('s'){
+          line-height: inherit;
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+  &__block02{
+    @include media-breakpoint-up('m'){
+      padding: 20px 70px;
+    }
+    border-radius: 16px;
+    &__desc{
+      font-family: $font-Roboto-Italic;
+      @extend .fz-16;
+      color: #1D1D1B;
+      line-height: (19.2/16);
+    }
+    &__txt1{
+      @extend .home__block02__dc;
+      @extend .fz-20;
+      color: $color1;
+      line-height: (24/20);
+    }
+    &__txt2{
+      @extend .home__block02__dc;
+      color: #1D1D1B;
+      line-height: (19.2/16);
+    }
+    &__dc{
+      font-family: $font-Roboto-Bold;
+    }
+  }
+  &__block03{
+    &__item{
+
+    }
+    &__boximg{
+      min-width: 20px;
+      text-align: center;
+    }
+    &__badge{
+      font-family: $font-Roboto-Bold;
+      @extend .fz-11;
+      background: $color1;
+      $x: 15px;
+      min-width: #{$x};
+      height: #{$x};
+    }
+    &__label{
+      background: #424242;
+      font-family: $font-Roboto;
+      @extend .fz-20;
+      .home__block03__item:nth-child(1) &{
+        background: #FF8811;
+      }
+      .home__block03__item:nth-child(2) &{
+        background: #606879;
+      }
+      .home__block03__item:nth-child(3) &{
+        background: #C24B0B;
+      }
+    }
+    &__txt{
+      font-family: $font-Roboto-Black;
+      color: #4D4D4D;
+      @extend .fz-16;
+      .home__block03__item:first-child &{
+        @extend .fz-18;
+      }
+    }
+  }
+  &__block04{
+    @include media-breakpoint-down('s'){
+      padding-bottom: 0;
+    }
+    &__title{
+      @extend .fz-52;
+      line-height: (63/52);
+      font-family: $font-SVN-AleoBoldItalic;
+      color: #ffffff;
+    }
+    &__bg{
+      background: #4E5DC5;
+      padding: 10px 15px;
+      color: #ffffff;
+    }
+    &__list{
+      >li{
+        margin: 0 !important;
+        @extend .fz-16;
+        font-family: $font-Montserrat-ExtraBold;
+      }
+    }
+  }
+}
